@@ -1,5 +1,3 @@
-[TOC]
-
 # 函数是根基
 
 ### 构造器的超能力
@@ -516,7 +514,7 @@ function isXML(elem) {
 
 ##### DOM中的id/name膨胀
 
-> ”五大“浏览器都会将表单input元素的id和name特性作为<form>元素的属性值引用。产生的这些属性会主动覆盖form元素上已经存在的同名属性
+> ”五大“浏览器都会将表单input元素的id和name特性作为form元素的属性值引用。产生的这些属性会主动覆盖form元素上已经存在的同名属性
 >
 > 此外，IE浏览器不仅会替换属性值，甚至还会替换该属性上的特性值
 
@@ -532,7 +530,7 @@ var actionValue = element.getAttributeNode("action").nodeValue
 
 ##### type陷阱
 
-> IE8以及之前的版本对<input>元素的type特性的影响，没有任何合理的解决方案。一旦<input>元素被插入到文档，它的type特性就不能再改变。
+> IE8以及之前的版本对input元素的type特性的影响，没有任何合理的解决方案。一旦input元素被插入到文档，它的type特性就不能再改变。
 
 ##### table index问题
 
