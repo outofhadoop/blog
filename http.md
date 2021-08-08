@@ -73,6 +73,7 @@
 * [418 I'm a teapot](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/418)：服务器拒绝泡咖啡，它只是个茶壶；一个愚人节玩笑😜。
 * [422 Unprocessable Entity](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/422)：服务器无法处理请求实体。
 * [425 Too Early](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/425)：服务器不愿冒险处理该请求，原因是该请求可能会重放，从而遭到重放攻击。
+* [426 Upgrade Required](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/426)：服务器拒绝处理处理当前协议的请求，但是可以接受客户端升级协议之后的请求。
 * [428 Precondition Required](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/428)：表示客户端发送的请求缺失条件首部，服务端要求发送。
 * [429 Too Many](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/429)：表示在一定时间内客户端发送了太多请求，超出了”频次限制“。
 * [431 Request Header Fields Too Large](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/431)：表示请求中的首部字段的值过大，服务器拒绝接受客户端的请求。
