@@ -67,6 +67,12 @@
 * [412 Precondition Failed](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/412)：通常由于没有满足请求首部字段（可能是[If-None-Match](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/If-None-Match) 或 [If-Unmodified-Since](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/If-Unmodified-Since)）规定的先决条件，从而拒绝对目标资源的请求。
 * [413 Payload Too Large](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/413)：表示请求主体的大小超过了服务器规定的限度，服务器可能会关闭连接以防止客户端继续发送该请求。
 * [414 URI Too Long](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/414)：表示客户端请求的URI超过了服务器允许的范围。
+* [415 Unsupported Media Type](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/415)：表示服务器不支持其有效荷载的形式。
+* [416 Range Not Satisfiable](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/416)：所请求的数据区间不在文件范围内。
+* [417 Expectation Failed](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/417)：服务器无法满足请求头[Expect](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Expect)中的要求。
+* [418 I'm a teapot](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/418)：服务器拒绝泡咖啡，它只是个茶壶；一个愚人节玩笑😜。
+* [422 Unprocessable Entity](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/422)：服务器无法处理请求实体。
+* [425 Too Early](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/425)：服务器不愿冒险处理该请求，原因是该请求可能会重放，从而遭到重放攻击。
 * [428 Precondition Required](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/428)：表示客户端发送的请求缺失条件首部，服务端要求发送。
 * [429 Too Many](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/429)：表示在一定时间内客户端发送了太多请求，超出了”频次限制“。
 * [431 Request Header Fields Too Large](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status/431)：表示请求中的首部字段的值过大，服务器拒绝接受客户端的请求。
