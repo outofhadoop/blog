@@ -27,6 +27,7 @@
 描述发生了什么的对象
 
 > 要想更新 state 中的数据，你需要发起一个 action
+> actions 只是描述了有事情发生了这一事实，并没有描述应用如何更新 state。
 
 ```javascript
 
@@ -35,6 +36,22 @@
 { type: 'SET_VISIBILITY_FILTER', filter: 'SHOW_ALL' }
 
 ```
+
+创建 Action 的函数被称为 Action 创建函数
+
+```javascript
+// 一般都会统一写到一个文件中便于管理
+const ADD_TODO = 'ADD_TODO'
+
+function addTodo (text) {
+  return {
+    type: ADD_TODO,
+    text,
+  }
+}
+```
+
+
 
 ## Reducer
 
