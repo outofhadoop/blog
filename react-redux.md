@@ -113,7 +113,47 @@ function todoApp(state = {}, action) {
 
 
 
+# 在 React 中使用
 
+渲染一个简单的列表和输入框 , 列表展示输入框添加的数据 
+
+```javascript
+// 引入 react-redux connect 方法, 
+import { connect } from "react-redux"
+
+
+/**
+ * Action Type
+ */
+// action 的所有类型应该单独定义在一个文件中便于管理
+const ACTION_TYPE = {
+  ADD_ITEM: 'ADD_ITEM'
+}
+
+/**
+ * Reducer
+ */
+// 要展示的列表数据
+const list = (state = [], action) => {
+  switch (action.type) {
+    case: ACTION_TYPE.ADD_ITEM:
+      return [
+        ...state,
+        // 处理 action 带来的数据, 添加一项
+        {
+          id: action.id,
+          text: action.text,
+          status: false,
+        }
+      ]
+    default: 
+      return state
+  }
+}
+
+
+
+```
 
 
 
